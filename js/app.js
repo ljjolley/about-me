@@ -3,7 +3,7 @@
 // Get the user's name
 var userName = prompt('Hi there! What is your name?');
 
-alert('Thanks for visiting me ' + userName + '. You\'re here to learn more about me and what it takes to be my friend.');
+alert('Thanks for visiting my site ' + userName + '. You\'re here to learn more about me. I\'m a pretty great person, so I think you\'ll enjoy it.');
 
 // Ask them five y/n questions
 

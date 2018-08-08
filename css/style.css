@@ -2,4 +2,15 @@ h1 {
     color: purple;
     background: cornsilk;
     margin: 30px;
+    font-size: 16pt;
+}
+h2 { 
+    color: purple;
+    background: cornsilk;
+    margin: 30px;
+}
+ul {
+    border: 3px line blueviolet;
+    background: cornsilk;
+    margin: 40px;
 }
