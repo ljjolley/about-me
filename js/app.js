@@ -8,9 +8,9 @@ function getName () {
     userName = prompt('Hi there! What is your name?'); 
 }
 
-getName();
+// getName();
 
-alert('Thanks for visiting my site ' + userName + '. You\'re here to learn more about me. I\'m a pretty great person, so I think you\'ll enjoy it.');
+// alert('Thanks for visiting my site ' + userName + '. You\'re here to learn more about me. I\'m a pretty great person, so I think you\'ll enjoy it.');
 
 // Ask them five y/n questions
 function questionOne () {
@@ -26,41 +26,53 @@ function questionOne () {
     }
 }
 
-questionOne();
+// questionOne();
 
-// var answerTwo = prompt('Do you want to cook me delicious food?').toLowerCase();
+function questionTwo () {
+    var answerTwo = prompt('Do you want to cook me delicious food?').toLowerCase();
 
-// console.log('answerTwo',answerTwo);
+    console.log('answerTwo',answerTwo);
 
-// if (answerTwo === 'y' || answerTwo === 'yes') {
-//     alert('Yum! Just tell me what I can bring.');
-//     correctAnswers++;
+    if (answerTwo === 'y' || answerTwo === 'yes') {
+        alert('Yum! Just tell me what I can bring.');
+        correctAnswers++;
 
-// } else {
-//     alert('That\'s cool. I\'ll make a great pot of something delicious, like ajiaco.'); 
-// }
+    } else {
+        alert('That\'s cool. I\'ll make a great pot of something delicious, like ajiaco.'); 
+    }
+}
 
-// var answerThree = prompt('Do you know where I grew up?').toLowerCase();
+// questionTwo();
 
-// console.log('answerThree',answerThree);
+function questionThree () {
+    var answerThree = prompt('Do you know where I grew up?').toLowerCase();
 
-// if (answerThree === 'y' || answerThree === 'yes') {
-//     alert('You must really be paying attention. I appreciate that.');
-//     correctAnswers++;
-// } else {
-//     alert('I grew up in Dallas, but lived abroad for five years.'); 
-// }
+    console.log('answerThree',answerThree);
 
-// var answerFour = prompt('Do you know what kind of martial art I studied for two years?').toLowerCase();
+    if (answerThree === 'y' || answerThree === 'yes') {
+        alert('You must really be paying attention. I appreciate that.');
+        correctAnswers++;
+    } else {
+        alert('I grew up in Dallas, but lived abroad for five years.'); 
+    }
+}
 
-// console.log('answerFour',answerFour);
+// questionThree();
 
-// if (answerFour === 'y' || answerFour === 'yes') {
-//     alert('I really miss training. Let me know if you know of a good gym.');
-//     correctAnswers++;
-// } else {
-//     alert('I did Brazilian JiuJitsu. I started when I want to Rio for four months.')
-// }
+function questionFour () {
+    var answerFour = prompt('Do you know what kind of martial art I studied for two years?').toLowerCase();
+
+    console.log('answerFour',answerFour);
+
+    if (answerFour === 'y' || answerFour === 'yes') {
+        alert('I really miss training. Let me know if you know of a good gym.');
+        correctAnswers++;
+    } else {
+        alert('I did Brazilian JiuJitsu. I started when I want to Rio for four months.')
+    }
+}
+
+questionFour();
 
 // var answerFive = prompt('Do you know what kind of dance I like to do, albiet poorly?').toLowerCase();
 
