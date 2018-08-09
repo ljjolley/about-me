@@ -1,89 +1,116 @@
 'use strict';
 
-// // Get the user's name
-// var userName = prompt('Hi there! What is your name?');
+var correctAnswers = 0;
 
-// alert('Thanks for visiting my site ' + userName + '. You\'re here to learn more about me. I\'m a pretty great person, so I think you\'ll enjoy it.');
+// Get the user's name
+var userName = prompt('Hi there! What is your name?');
 
-// // Ask them five y/n questions
+alert('Thanks for visiting my site ' + userName + '. You\'re here to learn more about me. I\'m a pretty great person, so I think you\'ll enjoy it.');
 
-// var answerOne = prompt('Do you memorize people\'s pet\'s names before you remember the human\'s name?').toLowerCase();
+// Ask them five y/n questions
 
-// console.log('answerOne',answerOne);
+var answerOne = prompt('Do you memorize people\'s pet\'s names before you remember the human\'s name?').toLowerCase();
 
-// if (answerOne === 'y' || answerOne === 'yes') {
-//     alert('Haha, me too! That\'s a very promising sign');
-// } else {
-//     alert('That\'s okay, we\'ll try another one'); 
-// }
+console.log('answerOne',answerOne);
 
-// var answerTwo = prompt('Do you want to cook me delicious food?').toLowerCase();
+if (answerOne === 'y' || answerOne === 'yes') {
+    alert('Haha, me too! That\'s a very promising sign');
+    correctAnswers++;
+} else {
+    alert('That\'s okay, we\'ll try another one'); 
+}
 
-// console.log('answerTwo',answerTwo);
+var answerTwo = prompt('Do you want to cook me delicious food?').toLowerCase();
 
-// if (answerTwo === 'y' || answerTwo === 'yes') {
-//     alert('Yum! Just tell me what I can bring.');
-// } else {
-//     alert('That\'s cool. I\'ll make a great pot of something delicious, like ajiaco.'); 
-// }
+console.log('answerTwo',answerTwo);
 
-// var answerThree = prompt('Do you know where I grew up?').toLowerCase();
+if (answerTwo === 'y' || answerTwo === 'yes') {
+    alert('Yum! Just tell me what I can bring.');
+    correctAnswers++;
 
-// console.log('answerThree',answerThree);
+} else {
+    alert('That\'s cool. I\'ll make a great pot of something delicious, like ajiaco.'); 
+}
 
-// if (answerThree === 'y' || answerThree === 'yes') {
-//     alert('You must really be paying attention. I appreciate that.');
-// } else {
-//     alert('I grew up in Dallas, but lived abroad for five years.'); 
-// }
+var answerThree = prompt('Do you know where I grew up?').toLowerCase();
 
-// var answerFour = prompt('Do you know what kind of martial art I studied for two years?').toLowerCase();
+console.log('answerThree',answerThree);
 
-// console.log('answerFour',answerFour);
+if (answerThree === 'y' || answerThree === 'yes') {
+    alert('You must really be paying attention. I appreciate that.');
+    correctAnswers++;
+} else {
+    alert('I grew up in Dallas, but lived abroad for five years.'); 
+}
 
-// if (answerFour === 'y' || answerFour === 'yes') {
-//     alert('I really miss training. Let me know if you know of a good gym.');
-// } else {
-//     alert('I did Brazilian JiuJitsu. I started when I want to Rio for four months.')
-// }
+var answerFour = prompt('Do you know what kind of martial art I studied for two years?').toLowerCase();
 
-// var answerFive = prompt('Do you know what kind of dance I like to do, albiet poorly?').toLowerCase();
+console.log('answerFour',answerFour);
 
-// console.log('answerFive',answerFive);
+if (answerFour === 'y' || answerFour === 'yes') {
+    alert('I really miss training. Let me know if you know of a good gym.');
+    correctAnswers++;
+} else {
+    alert('I did Brazilian JiuJitsu. I started when I want to Rio for four months.')
+}
 
-// if (answerFive === 'y' || answerFive === 'yes') {
-//     alert('Let\'s go dancing!');
-// } else {
-//     alert('Argentine Tango for the win.')
-// }
+var answerFive = prompt('Do you know what kind of dance I like to do, albiet poorly?').toLowerCase();
+
+console.log('answerFive',answerFive);
+
+if (answerFive === 'y' || answerFive === 'yes') {
+    alert('Let\'s go dancing!');
+    correctAnswers++;
+} else {
+    alert('Argentine Tango for the win.')
+}
 
 
 for (var step = 0; step < 4; step++) {
     var answerSix = prompt('How many years did I live outside of the US?');
     console.log('answerSix', answerSix);
+
     if (answerSix === '5') {
         alert('Well done! You got it!');
+        correctAnswers++;
         break;
     } else if (answerSix > 5) {
         alert('That is a great guess, but you\'re a little high.');
     } else {
         alert('That is a good guess, but you\'re low.');
     }
+
     if (step === 3) {
-        alert('That was a great effort, the correct answer was five. We\'re going to go ahead and move on to Question #7.')
+        alert('That was a great effort, the correct answer was five. We\'re going to go ahead and move on to Question #7.');
     }
-    
 }    
 
 
+for (var step = 0; step < 6; step++) {
+    var answerSeven = prompt('What is my favorite dog breed?').toLowerCase();
+    console.log('answerSeven', answerSeven);
 
+    var favoriteBreeds = ['boxer', 'boston', 'olliedog'];
+    var userGuessedCorrectly = false;
+    for (var ii = 0; ii < favoriteBreeds.length; ii++) {
+        console.log(favoriteBreeds[ii]);
+        if(answerSeven === favoriteBreeds[ii]) {
+            console.log('puppers');
+            userGuessedCorrectly = true;
+            correctAnswers++
+            
+        }
+    }
 
-// for (var step = 0; step < 5; step++) {
-//     // do a thing
-//     console.log('step', step);
-//     alert ('Do you like ' + step + '?');
-// }
+    if(step === 5 || userGuessedCorrectly) {
+        alert('Boxers, Bostons, and my dog Ollie are the best!');
+        break;
+    } else {
+        alert('I mean of course I love them too, but they aren\'t my favorite favorite.');
+    }
+}
 
+alert('You did so well! You got ' + correctAnswers + ' correct out of seven. Great job ' + userName + '!')
 
 
 

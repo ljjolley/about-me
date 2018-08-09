@@ -10,7 +10,22 @@ h2 {
     margin: 30px;
 }
 ul {
-    border: 3px line blueviolet;
+    border: 3px solid blueviolet;
     background: cornsilk;
     margin: 40px;
+}
+h3 {
+    border: 3px solid blueviolet;
+    background: cornsilk;
+    margin: 20px;
+}
+
+ol {
+    border: 3px solid blueviolet;
+    background: cornsilk;
+    margin: 20px;
+}
+
+ol li {
+    list-style: decimal
 }
