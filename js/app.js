@@ -8,9 +8,9 @@ function getName () {
     userName = prompt('Hi there! What is your name?'); 
 }
 
-// getName();
+getName();
 
-// alert('Thanks for visiting my site ' + userName + '. You\'re here to learn more about me. I\'m a pretty great person, so I think you\'ll enjoy it.');
+alert('Thanks for visiting my site ' + userName + '. You\'re here to learn more about me. I\'m a pretty great person, so I think you\'ll enjoy it.');
 
 // Ask them five y/n questions
 function questionOne () {
@@ -26,7 +26,7 @@ function questionOne () {
     }
 }
 
-// questionOne();
+questionOne();
 
 function questionTwo () {
     var answerTwo = prompt('Do you want to cook me delicious food?').toLowerCase();
@@ -42,7 +42,7 @@ function questionTwo () {
     }
 }
 
-// questionTwo();
+questionTwo();
 
 function questionThree () {
     var answerThree = prompt('Do you know where I grew up?').toLowerCase();
@@ -57,7 +57,7 @@ function questionThree () {
     }
 }
 
-// questionThree();
+questionThree();
 
 function questionFour () {
     var answerFour = prompt('Do you know what kind of martial art I studied for two years?').toLowerCase();
@@ -74,63 +74,73 @@ function questionFour () {
 
 questionFour();
 
-// var answerFive = prompt('Do you know what kind of dance I like to do, albiet poorly?').toLowerCase();
+function questionFive () {
+    var answerFive = prompt('Do you know what kind of dance I like to do, albiet poorly?').toLowerCase();
 
-// console.log('answerFive',answerFive);
+    console.log('answerFive',answerFive);
 
-// if (answerFive === 'y' || answerFive === 'yes') {
-//     alert('Let\'s go dancing!');
-//     correctAnswers++;
-// } else {
-//     alert('Argentine Tango for the win.')
-// }
+    if (answerFive === 'y' || answerFive === 'yes') {
+        alert('Let\'s go dancing!');
+        correctAnswers++;
+    } else {
+        alert('Argentine Tango for the win.')
+    }
+}
 
+questionFive();
 
-// for (var step = 0; step < 4; step++) {
-//     var answerSix = prompt('How many years did I live outside of the US?');
-//     console.log('answerSix', answerSix);
+function questionSix () {
+    for (var step = 0; step < 4; step++) {
+        var answerSix = prompt('How many years did I live outside of the US?');
+        console.log('answerSix', answerSix);
 
-//     if (answerSix === '5') {
-//         alert('Well done! You got it!');
-//         correctAnswers++;
-//         break;
-//     } else if (answerSix > 5) {
-//         alert('That is a great guess, but you\'re a little high.');
-//     } else {
-//         alert('That is a good guess, but you\'re low.');
-//     }
+        if (answerSix === '5') {
+            alert('Well done! You got it!');
+            correctAnswers++;
+            break;
+        } else if (answerSix > 5) {
+            alert('That is a great guess, but you\'re a little high.');
+        } else {
+            alert('That is a good guess, but you\'re low.');
+        }
 
-//     if (step === 3) {
-//         alert('That was a great effort, the correct answer was five. We\'re going to go ahead and move on to Question #7.');
-//     }
-// }    
+        if (step === 3) {
+            alert('That was a great effort, the correct answer was five. We\'re going to go ahead and move on to Question #7.');
+        }
+    }    
+}
 
+questionSix();
 
-// for (var step = 0; step < 6; step++) {
-//     var answerSeven = prompt('What is my favorite dog breed?').toLowerCase();
-//     console.log('answerSeven', answerSeven);
+function questionSeven () {
+    for (var step = 0; step < 6; step++) {
+        var answerSeven = prompt('What is my favorite dog breed?').toLowerCase();
+        console.log('answerSeven', answerSeven);
 
-//     var favoriteBreeds = ['boxer', 'boston', 'olliedog'];
-//     var userGuessedCorrectly = false;
-//     for (var ii = 0; ii < favoriteBreeds.length; ii++) {
-//         console.log(favoriteBreeds[ii]);
-//         if(answerSeven === favoriteBreeds[ii]) {
-//             console.log('puppers');
-//             userGuessedCorrectly = true;
-//             correctAnswers++
-            
-//         }
-//     }
+        var favoriteBreeds = ['boxer', 'boston', 'olliedog'];
+        var userGuessedCorrectly = false;
+        for (var ii = 0; ii < favoriteBreeds.length; ii++) {
+            console.log(favoriteBreeds[ii]);
+            if(answerSeven === favoriteBreeds[ii]) {
+                console.log('puppers');
+                userGuessedCorrectly = true;
+                correctAnswers++
+                
+            }
+        }
 
-//     if(step === 5 || userGuessedCorrectly) {
-//         alert('Boxers, Bostons, and my dog Ollie are the best!');
-//         break;
-//     } else {
-//         alert('I mean of course I love them too, but they aren\'t my favorite favorite.');
-//     }
-// }
+        if(step === 5 || userGuessedCorrectly) {
+            alert('Boxers, Bostons, and my dog Ollie are the best!');
+            break;
+        } else {
+            alert('I mean of course I love them too, but they aren\'t my favorite favorite.');
+        }
+    }
+}
 
-// alert('You did so well! You got ' + correctAnswers + ' correct out of seven. Great job ' + userName + '!')
+questionSeven();
+
+alert('You did so well! You got ' + correctAnswers + ' correct out of seven. Great job ' + userName + '!')
 
 
 
